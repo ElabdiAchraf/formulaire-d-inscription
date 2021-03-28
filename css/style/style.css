@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.shaadow {
+  box-shadow: 1px 9px 14px -2px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 1px 9px 14px -2px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 1px 9px 14px -2px rgba(0, 0, 0, 1);
+}
+.myimg {
+  position: relative;
+  background-size: cover;
+  border-radius: 5px;
+  height: 100%;
+  min-height: 300px;
+}
+.myimg img {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  height: 100%;
+  z-index: 1;
+}
+.myimg h3,
+.myimg p {
+  position: relative;
+  z-index: 100;
+}
+.myimg h3 {
+  top: 50px;
+  left: 40px;
+}
+.myimg p {
+  top: 50px;
+  left: 30px;
+  right: 40px;
+  width: 80%;
+}
+.main {
+  background: linear-gradient(-100deg, rgb(27, 124, 243) 50%, white 50%);
+  background-size: 100% 100%;
+}
+.icon {
+  font-size: 30px;
+  padding: 20px;
+  cursor: pointer;
+}
+.form-group {
+  padding: 26px;
+  padding-bottom: 26.2px;
+}
+.form-control {
+  outline: none;
+  background: none;
+  border: none;
+}
+.form-control:focus {
+  outline: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+/*----  input style -----*/
+.my-input {
+  display: flex;
+  align-items: baseline;
+  border-bottom: grey solid 2px;
+  width: 80%;
+  color: gray;
+  transition: 0.3s;
+}
+
+.my-input:focus-within {
+  transform: scale(1.1);
+  border-bottom: rgb(102, 102, 241) solid 2px;
+  color: rgb(102, 102, 241);
+}
+
+.inscrire {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 80%;
+  margin-top: 10px;
+}
+@media (max-width: 976px) {
+  .container{
+    padding: 0% !important;
+  }
+  .my-input {
+  
+    width: 100%;
+    
+  }
+  .inscrire{
+    width: 100%;
+  }
+}
